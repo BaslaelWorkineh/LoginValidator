@@ -109,14 +109,21 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _submitForm() {
     if (_formKey.currentState!.validate()) {
-      // Process the form data
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text('Form submitted successfully!'),
-        ),
-      );
-      _emailController.clear();
-      _passwordController.clear();
+      String email = _emailController.text;
+      String password = _passwordController.text;
+      if (email == 'baslaworku@gmail.com' && password == 'Password@123') {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Login successful!'),
+          ),
+        );
+      } else {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Invalid credentials'),
+          ),
+        );
+      }
     }
   }
 

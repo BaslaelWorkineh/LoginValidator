@@ -1,21 +1,25 @@
 # myapp
 
-A new Flutter project.
+A Flutter application demonstrating a simple login form with specific credential validation.
+
+## Overview
+
+This application presents a login screen where users can enter their email and password. 
+The application is designed to only allow login with the following credentials:
+
+-   **Email:** baslaworku@gmail.com
+-   **Password:** Password@123
+
+Upon successful login with the correct credentials, a "Login successful!" message is displayed. 
+Otherwise, an "Invalid credentials" error message is shown.
+
+
+![App Screenshot](screenshots/image.png)
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# LoginValidator
-# LoginValidator
-# LoginValidator
-# LoginValidator
-# LoginValidator
+To run this project, you will need to have Flutter installed on your machine. Once you have Flutter set up, follow these steps:
+1. Clone this repository to your local machine.
+2. Navigate to the project directory in your terminal.
+3. Run `flutter pub get` to install the necessary dependencies.
+4. Run `flutter run` to start the application.

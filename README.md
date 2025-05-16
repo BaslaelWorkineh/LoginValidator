@@ -1,4 +1,4 @@
-# myapp
+# For class assignment
 
 A Flutter application demonstrating a simple login form with specific credential validation.
 
